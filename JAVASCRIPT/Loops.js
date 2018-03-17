@@ -36,3 +36,15 @@ for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
        }
   }
 }
+
+//Gerar valores com Math.random
+let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+let currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+  currentCard = cards[Math.floor(Math.random() *4)];
+}
+
+console.log('You found a spade!');
