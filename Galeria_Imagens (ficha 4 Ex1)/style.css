@@ -1,0 +1,24 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.images img {
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.mainArea img {
+    margin: auto auto auto auto;
+    width: 350px;
+    height: 350px;
+    margin-left: 580px;
+}

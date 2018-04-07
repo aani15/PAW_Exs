@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!-- Serve para que se consiga escrever palavras com acentos, por exemplo -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Ficha 4 Ex 1</title>
+    </head>
+    <body>
+        <h1>Galeria de Imagens</h1>
+        <div class="mainArea">
+            <img id="header" src="imagens/cat-eye.jpg">
+        </div>
+        <div class="images">
+            <!-- Com o uso dos id's conseguimos identificar as imagens em particular -->
+            <img id="img1" src="imagens/cat-eye.jpg" onclick="ImgParaMain(1)">
+            <img id="img2" src="imagens/estrada.jpg" onclick="ImgParaMain(2)">
+            <img id="img3" src="imagens/keyboard.jpg" onclick="ImgParaMain(3)">
+            <img id="img4" src="imagens/paradise.jpg" onclick="ImgParaMain(4)">
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
