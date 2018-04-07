@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: springgreen;
+    margin: 30px 0 50px;
+}
+
+.galeria {
+    margin: 10px 50px;
+}
+
+.galeria img {
+    width: 230px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+/*
+filter: grayscale(0%);
+Serve para que quando passemos o rato por cima da 
+imagem ela deixe de estar com fundo cinzento
+transform: scale(1.1);
+Serve para que quando passemos com o rato por cima 
+da imagem ela se destaque das outras
+*/
+.galeria img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
