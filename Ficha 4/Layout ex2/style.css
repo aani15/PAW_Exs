@@ -1,0 +1,26 @@
+.mainArea {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto auto auto auto;
+    width: 300px;
+    height: 300px;
+    background-color: yellowgreen;
+    opacity: 0.4;
+}
+
+.higherDiv {
+    background-color: gray;
+    opacity: 0.4;
+    grid-row: 1 / span 2;
+}
+/*
+grid-row: 1/span 3;
+1 --> significa a posição na tabela, que neste caso esta dividida em 2
+span 2 --> cria tabelas pequenas, neste caso 2
+*/
+
+h1 {
+    text-align: center;
+    font-family: unset;
+    color: red;
+}
