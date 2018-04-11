@@ -1,0 +1,51 @@
+body {
+    font: 1em sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    max-width: auto;
+    margin: 0;
+    padding: 0 5px;
+}
+
+p > label {
+    display: block;
+}
+
+input:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:valid {
+    box-shadow: none;
+}
+
+/*Retiardo da europCar*/
+.bt.grey {
+    display: inline-block;
+    margin: 0;
+    padding: 0 40px 0 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #036b05;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: all 0s ease-out;
+    -moz-transition: all 0s ease-out;
+    -ms-transition: all 0s ease-out;
+    -o-transition: all 0s ease-out;
+    transition: all 0s ease-out;
+    padding: 0 0 0 10px;
+    background: transparent url(/files/live/sites/Europcar/files/dc_images/backgrounds/bg_bt_sec.png) no-repeat 2px 0;
+    height: 32px;
+    line-height: 32px;
+}

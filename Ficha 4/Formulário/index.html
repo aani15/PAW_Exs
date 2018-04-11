@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Ficha 4 ex 3</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form id="createProfile">
+            <fieldset>
+                <legend>Criar Perfil Condutor (<abbr title="Campos Obrigatórios">*</abbr>)</legend>
+                <legend for="morada">Morada preferencial: </legend>
+                <input type="radio" name="morada" value="casa" checked>Casa</input>
+                <input type="radio" name="morada" value="morada">Morada</input>
+                <p></p>
+                <label for="título">Título (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <select id="título">
+                    <option>Título</option>
+                    <option>Sr.</option>
+                    <option>Srª.</option>
+                </select>
+                <p></p>
+                <label><legend for="nome">Nome (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</legend></label>
+                <input type="text" minlength="3" maxlength="10" required id="nome"/>
+                <label for="apelido">Apelido (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="text" minlength="3" maxlength="10" required id="apelido"/>
+                <p></p>
+                <label for="email">Email (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="email" required name="email" id="email"/>
+                <label for="confEmail">Confirmar Email (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="email" required name="email" id="confEmail"/>
+                <p></p>
+                <label for="cod-postal">Código Postal (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="text" required id="email" placeholder="4420-244 (p.ex)" pattern="[1-9]{4}[\-]?[0-9]{3}"/>
+                <label for="cidade">Cidade (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="text" required id="cidade"/>
+                <p></p>
+                <label for="país">País (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <select id="país">
+                    <option>Portugal</option>
+                    <option>Espanha</option>
+                    <option>França</option>
+                </select>
+                <p></p>
+                <label for="tlf">Telefone (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="tel" placeholder="9********" required id="tlf" minlength="9" maxlength="9" pattern="[9]{1}[1,2,3,6]{1}[0-9]{7}"/>
+                <label for="tlm">Telemóvel (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                <input type="tel" placeholder="2********" required id="tlm" minlength="9" maxlength="9" pattern="[2]{1}[0-9]{1}[0,1,2,3,4,5,6,8,9]{7}"/>
+                <p></p>
+                <fieldset>
+                    <legend>Detalhes do condutor</legend>
+                    <legend for="dob">Data de nascimento (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</legend>
+                    <input type="date" required id="dob"/>
+                    <p></p>
+                    <label for="newPass">Nova Password (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                    <input type="password" required id="newPass" pattern=".{6,}"/>
+                    <label for="confNewPass">Confirmar Nova Password (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                    <input type="password" required id="confNewPass" pattern=".{6,}"/>
+                    <p></p>
+                    <label for="numCartaCond">Número da Carta de Condução (<abbr title="Este campo é de preenchimento obrigatório">*</abbr>)</label>
+                    <input type="number" required id="numCartaCond" pattern="[0-9]{7}" minlength="7" maxlength="7"/>
+                    <p></p>
+                    <input type="checkbox">Aceito os <a href="Ola" style="color:dodgerblue">Termos e condições</a>.</input>
+                    <p></p>
+                    <button>CRIAR O PERFIL</button>
+                </fieldset>
+            </fieldset>
+        </form>
+        <script src="myscript.js"></script>
+    </body>
+</html>
