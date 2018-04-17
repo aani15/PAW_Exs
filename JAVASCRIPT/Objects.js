@@ -240,4 +240,6 @@ let person = {
   person.age = 'Thirty-nine';
   person.age = 39;
   console.log(person._age);
+
+
   
