@@ -1,0 +1,19 @@
+html
+    head
+        title= title
+    body
+        h1= messageTitle
+        div(class='container')
+            each student in students 
+                p
+                    span --------------------------
+                p
+                    span Número:
+                    span #{' ' + student.numero}
+                p    
+                    span Nome:
+                    span #{' ' + student.nome}
+                p
+                    span Género:
+                    span #{' ' + student.genero}
+                p
